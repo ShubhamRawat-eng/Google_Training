@@ -5,6 +5,9 @@ if unit == "TB" or unit == "tb":
 	discrepancy = 1000000000000 / 1099511627776
 elif unit == "GB" or unit == "gb":
 	discrepancy = 1000000000 / 1073741824
+else:
+	print("Please choose from TB or GB.Defaulting to GB.")
+	discrepancy = 1000000000 / 1073741824
  
 advertised_capacity = float(input("Enter the advertised capacity: "))
 
